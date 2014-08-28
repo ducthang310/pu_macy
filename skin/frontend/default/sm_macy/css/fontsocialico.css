@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Socialico';
+    src: url('font/socialico-webfont.eot');
+    src: url('font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/socialico-webfont.woff') format('woff'),
+         url('font/socialico-webfont.ttf') format('truetype'),
+         url('font/socialico-webfont.svg#SocialicoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*   General style    */
+
+
+.block-social li{ font-family: "Socialico";	}
+.block-social li a:before {
+    content: attr(data-icon);
+    font-family: 'Socialico';
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 24px;
+}
+.block-social li a {
+    color: #212121;
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    text-align: center;
+    width: 24px;
+    z-index: 2;
+}
+.block-social li a:hover {
+    color: #FFFFFF;
+}
+
+.block-social li a:hover span {
+    animation: 0.5s ease 0s normal none 1 bounceIn;
+    transform: scale(1);
+}
+.block-social li span {
+    background: none repeat scroll 0 0 #6c6c6c;
+    border-radius: 12px;
+    content: "";
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+    z-index: -1;
+	text-indent:-999em;
+}

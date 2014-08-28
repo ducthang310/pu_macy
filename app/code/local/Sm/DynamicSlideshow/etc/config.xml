@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<config>
+	<global>
+		<models>
+            <dynamicslideshow>
+                <class>Sm_DynamicSlideshow_Model</class>
+            </dynamicslideshow>
+        </models>
+		<blocks>
+            <dynamicslideshow>
+                <class>Sm_DynamicSlideshow_Block</class>
+            </dynamicslideshow>            		
+        </blocks>				
+		<helpers>
+            <dynamicslideshow>
+                <class>Sm_DynamicSlideshow_Helper</class>
+            </dynamicslideshow>
+        </helpers>
+        <resources>
+        	<dynamicslideshow_setup>
+        		<setup>
+        			<module>Sm_DynamicSlideshow</module>
+        		</setup>
+        	</dynamicslideshow_setup>
+        </resources>
+	</global>
+	<frontend>
+        <routers>
+			<dynamicslideshow>
+                <use>standard</use>
+                <args>
+                    <module>Sm_DynamicSlideshow</module>
+                    <frontName>dynamicslideshow</frontName>
+                </args>
+            </dynamicslideshow>
+        </routers>
+		<layout>
+            <updates>
+                <dynamicslideshow module="Sm_DynamicSlideshow">
+					<file>sm/dynamicslideshow.xml</file>
+                </dynamicslideshow>
+            </updates>
+        </layout>
+        <translate>
+      		<modules>
+          		<Sm_DynamicSlideshow>
+                     <files>
+                          <default>Sm_DynamicSlideshow.csv</default>
+                     </files>
+                </Sm_DynamicSlideshow>
+            </modules>
+        </translate>
+	</frontend>
+	<adminhtml>
+        <translate>
+      		<modules>
+          		<Sm_DynamicSlideshow>
+                     <files>
+                          <default>Sm_DynamicSlideshow.csv</default>
+                     </files>
+                </Sm_DynamicSlideshow>
+            </modules>
+        </translate>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>										
+										<dynamicslideshow_cfg translate="title" module="dynamicslideshow">
+											<title>SM DynamicSlideshow Settings</title>
+										</dynamicslideshow_cfg>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+	<default>
+        <dynamicslideshow_cfg>
+        	<general>
+                <isenabled>1</isenabled>
+                <title>SM Dynamic Slideshow</title>
+            </general>
+			<module_setting>
+				<button_style>round</button_style>
+				<pause>1</pause>
+				<interval>3000</interval>
+			</module_setting>            
+            <product_selection>
+            	<slider1>
+			
+				</slider1>
+            	<slider2>
+					
+				</slider2>
+            	<slider3>
+									
+				</slider3>
+            	<slider4>
+							
+				</slider4>
+            	<slider5>
+							
+				</slider5>
+            	<slider6></slider6>
+            	<slider7></slider7>
+            	<slider8></slider8>
+            	<slider9></slider9>
+            	<slider10></slider10>
+            </product_selection>
+            <advanced>
+            	<include_jquery>1</include_jquery>
+            	<pretext></pretext>
+            	<posttext></posttext>
+            </advanced>
+        </dynamicslideshow_cfg>
+    </default>
+</config>

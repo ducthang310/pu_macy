@@ -1,0 +1,91 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM ParallaxSlider - Version 1.0
+ # Copyright (c) 2013 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+$options = $this->getConfigObject();
+$smarthelper= Mage::helper('dynamicslideshow/utils');
+$suffix = rand().time();
+$tag_id = 'dynamicslideshow_'.$suffix;
+echo $this->getScriptTags();
+if( $options->pause == 1 ){
+	$hover = 'on';
+}else {
+	$hover = 'off';
+}
+//var_dump($options);
+//var_dump($options->pause);die
+?>
+<link href='http://fonts.googleapis.com/css?family=Share' rel='stylesheet' type='text/css' />
+	<?php if(!empty($options->pretext)) { ?>
+		<div class="pre-text"><?php echo $options->pretext; ?></div>
+	<?php } ?>
+	<div class="dynamicslideshow-container" id="<?php echo $tag_id;?>">
+		<div class="dynamicslideshow">
+			<ul>
+				<?php if( $options->slider1 !=""){
+					echo $options->slider1;
+				}
+				if( $options->slider2 !=""){
+					echo $options->slider2;
+				}
+				if( $options->slider3 !=""){
+					echo $options->slider3;
+				}
+				if( $options->slider4 !=""){
+					echo $options->slider4;
+				}
+				if( $options->slider5 !=""){
+					echo $options->slider5;
+				}
+				if( $options->slider6 !=""){
+					echo $options->slider6;
+				}
+				if( $options->slider7 !=""){
+					echo $options->slider7;
+				}
+				if( $options->slider8 !=""){
+					echo $options->slider8;
+				}
+				if( $options->slider9 !=""){
+					echo $options->slider9;
+				}
+				if( $options->slider10 !=""){
+					echo $options->slider10;
+				}?>
+			</ul>
+			<div class="tp-bannertimer"></div>
+		</div>
+	</div>
+	<?php if(!empty($options->posttext)) {  ?>
+		<div class="post-text"><?php echo $options->posttext; ?></div>
+	<?php }?>
+<script type="text/javascript">
+	//jQuery(document).ready(function($) {
+	jQuery(window).load(function() {
+	if (jQuery.fn.cssOriginal!=undefined)
+		jQuery.fn.css = jQuery.fn.cssOriginal;
+	jQuery('#<?php echo $tag_id;?> > .dynamicslideshow').revolution(
+		{
+			delay:<?php echo $options->interval;?>,
+			startwidth:890,
+			startheight:499,
+			onHoverStop:"<?php echo $hover;?>",						// Stop Banner Timet at Hover on Slide on/off
+			thumbWidth:100,							    // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+			thumbHeight:100,
+			thumbAmount:4,
+			hideThumbs:200,
+			navigationType:"bullet",					           //bullet, thumb, none, both	 (No Shadow in Fullwidth Version !)
+			navigationArrows:"verticalcentered",		                     //nexttobullets, verticalcentered, none
+			navigationStyle:"<?php echo $options->button_style;?>",				//round,square,navbar
+			touchenabled:"on",						                       // Enable Swipe Function : on/off
+			navOffsetHorizontal:0,
+			navOffsetVertical:20,
+			fullWidth:"on",
+			shadow: 0				//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+		});
+});
+</script>

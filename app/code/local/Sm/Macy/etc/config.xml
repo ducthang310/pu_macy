@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Sm_Macy>
+			<version>1.0.0</version>
+			<title>MagenTech.com</title>
+			<link><![CDATA[http://www.magentech.com/]]></link>
+		</Sm_Macy>
+	</modules>
+	<global>
+		<helpers>
+		  <macy>
+			<class>Sm_Macy_Helper</class>
+		  </macy>
+		</helpers>
+		<models>
+		  <macy>
+			<class>Sm_Macy_Model</class>
+		  </macy>
+		</models>		
+	</global>
+	<adminhtml>
+        <translate>
+            <modules>
+                <Sm_Macy>
+                    <files>
+                        <default>Sm_Macy.csv</default>
+                    </files>
+                </Sm_Macy>
+            </modules>
+        </translate>
+	</adminhtml>	
+ 	<default>
+		<macy_cfg module="macy">
+			<general>
+				<showcpanel>1</showcpanel>
+				<color>yellow</color>
+				<body_background_color>#FFF</body_background_color>
+				<body_background_image>6</body_background_image>
+				<body_link_color>#686868</body_link_color>
+				<body_text_color>#909090</body_text_color>
+				<header_background_color>#292929</header_background_color>
+				<header_background_image>1</header_background_image>
+				<footer_background_color>#000</footer_background_color>
+				<footer_background_image>6</footer_background_image>
+				<menu_styles>1</menu_styles>
+				<google_font>Questrial</google_font>
+				<google_font_targets>
+							#yt_tab_products .yt-tab-navi li a:hover, 
+							#yt_tab_products .yt-tab-navi li.active, 
+							li.selected a.subhead, 
+							.block-layered-nav dt,
+							#review-form h4, 
+							
+							.social h4, 
+							.newslet label, 
+							.promotions p, 
+							#yt_sidenav li a.subhead, 
+							
+							h1#logo a span, ul.yt-tab-navi li a, 
+							ul.yt-tab-navi li.active a, 
+							.yt-product-detail .product-name, 
+							.product-name a, 
+							.popup-box a.link-wishlist,
+							 
+							.header-nav-container-home ul#nav li.level0 > a, 
+							.header-nav-container-home ul#nav li.level1 > a, 
+							
+							.sm_megamenu_wrapper_vertical_menu ul.sm_megamenu_menu li div div.sm_megamenu_title a, 
+							.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_head_item .sm_megamenu_title > span,
+							.sm_megamenu_lv1 .sm_megamenu_nodesc .sm_megamenu_title, 
+							.sm_megamenu_content h2.product-name a, 
+							
+							.login-quick .more-actions a, 
+							.block-title h3,
+							.ytc_background_theme1 .ytc-content-slickslider .content-box .block-title a ,
+							.block-wrapper.custom-type .block-custom  .block-title,
+							.page-title h1,
+							.col-left .block-title strong,
+							.breadcrumbs li,
+							.col-left h1,
+							.top-footer .block-title,
+							.link-wishlist,
+							.link-compare,
+							.bottomsl1-wrap .block-title,
+							.add-review button.button,
+							.actions input.submit-repl,
+							.block-address .block-title,
+							.btn-cart, .btn-contact, .button.register-button,
+							#product-options-wrapper.product-options span.label-option,
+							
+							.f-base
+				</google_font_targets>
+				<body_font_size>14px</body_font_size>
+				<body_font_family>Arial</body_font_family>
+			</general>
+		</macy_cfg>
+	</default> 
+</config> 
