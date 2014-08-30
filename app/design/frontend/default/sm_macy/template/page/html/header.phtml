@@ -87,7 +87,7 @@ global $var_yttheme;
 									<?php if(!$this->helper('customer')->isLoggedIn() ): ?> 
 									<ul class="li-add">	
 										<li class="last item-li4">									
-											<a title="Log In" href="javascript:void(0)">Log In</a>
+											<a title="Log In" href="javascript:void(0)"><?php echo $this->__('Log In')?></a>
 											<div class="login-quick" style="display:none">
 												<?php echo $this->getChildHtml('customer_form_mini_login') ?>
 											</div>
