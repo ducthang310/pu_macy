@@ -155,6 +155,15 @@
                 </megamenu>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <Sm_Megamenu>
+                    <files>
+                        <default>Sm_Megamenu.csv</default>
+                    </files>
+                </Sm_Megamenu>
+            </modules>
+        </translate>
     </frontend>
     <admin>
         <routers>
@@ -168,6 +177,15 @@
         </routers>
     </admin>
     <adminhtml>
+        <translate>
+            <modules>
+                <Sm_Megamenu>
+                    <files>
+                        <default>Sm_Megamenu.csv</default>
+                    </files>
+                </Sm_Megamenu>
+            </modules>
+        </translate>
 		<menu>
 			<megamenu module="megamenu">
 				<title>SM MegaMenu</title>
