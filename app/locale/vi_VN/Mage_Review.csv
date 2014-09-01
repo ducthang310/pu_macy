@@ -9,6 +9,7 @@
 "<a href=""%1$s"" onclick=""this.target=\'blank\'"">%2$s %3$s</a> <a href=""mailto:%4$s"">(%4$s)</a>","<a href=""%1$s"" onclick=""this.target=\'blank\'"">%2$s %3$s</a> <a href=""mailto:%4$s"">(%4$s)</a>"
 "Add New Review","Thêm Đánh Giá"
 "Add Your Review","Đánh Giá Của Bạn"
+"Add Review", "Thêm Đánh Giá"
 "Administrator","Administrator"
 "All Reviews","Toàn Bộ Đánh Giá"
 "All Reviews of Customer `%s`","All Reviews of Customer `%s`"

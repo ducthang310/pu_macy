@@ -39,7 +39,7 @@ $_class   = $_element->getFieldsetHtmlClass();
     <td class="<?php echo $_element->hasValueClass() ? $_element->getValueClass() : 'value' ?><?php echo $_class ? " {$_class}-value" : ''?>">
         <?php echo trim($_element->getElementHtml()) ?>
         <?php if ($_note): ?>
-            <p class="note<?php echo $_class ? " {$_class}-note" : ''?>" id="note_<?php echo $_element->getId()?>"><span><?php echo $_note ?></span></p>
+            <p class="note<?php echo $_class ? " {$_class}-note" : ''?>" id="note_<?php echo $_element->getId()?>"><span><?php echo $this->__($_note) ?></span></p>
         <?php endif ?>
     </td>
     <?php endif; ?>

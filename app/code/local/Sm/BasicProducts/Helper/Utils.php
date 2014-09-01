@@ -12,14 +12,18 @@ class Sm_BasicProducts_Helper_Utils extends Mage_Core_Helper_Abstract {
 		$attribs = '';
 		switch($type){
 			default:
-			case '0':
+			case '1':
+                break;
 			case '':
 				break;
-			case '1':
+			case '2':
+                $attribs = "target=\"_blank\"";
+                break;
 			case '_blank':
 				$attribs = "target=\"_blank\"";
 				break;
-			case '2':
+			case '3':$attribs = "onclick=\"window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,false');return false;\"";
+                break;
 			case '_popup':
 				$attribs = "onclick=\"window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,false');return false;\"";
 				break;
